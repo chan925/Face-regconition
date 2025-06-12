@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Face Recognition</title>
+</head>
+<body>
+    <h1>Face Recognition System</h1>
+
+    <h2>Upload Image</h2>
+    <form method="POST" action="/upload" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/*" required>
+        <input type="submit" value="Upload and Compare">
+    </form>
+
+    <h2>Capture from Camera</h2>
+    <form action="/capture" method="GET">
+        <button type="submit">Capture Photo with Camera</button>
+    </form>
+</body>
+</html>
